@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- build:css sources/style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home Page</title>
+</head>
+<body>
+    <header id="home">
+        <span id="logo">Store</span>
+        <nav id="navigationBar"> 
+            <a class="navItem" href="#navigationBar">Home</a>
+            <a class="navItem" href="#searchProducts">Products</a>
+            <a class="navItem" href="#searchUsers">Users</a>
+            <a class="navItem" href="#aboutSection">About</a>
+            <a class="navItem" href="#footer">Contact Us</a>
+        </nav>
+      
+    </header>
+    <section id="productSection">
+        <h2 id="slogan"><span id="word">No. 1</span> Online Store in the Middle East</h2>
+        <div id="product">
+            <div id="searchBox">
+                <input type="search" name="searchItems" id="searchItems" placeholder="Please Enter Post Id">
+                <button id="searchButton" type="submit">Search</button>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="info">
+                    <h3 id="itemTitle">Item title</h3>
+                    <p id="itemDescription">Item description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section  id="searchProducts">
+        <div id="listSection">            
+            <label id="labelDropList" for="allProducts">Check All Products</label><br>
+            <select name="allProducts" id="allProducts"></select>
+        </div>
+        <div class="card cardMenu">
+            <div class="icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="info">
+                <!-- <h3 id="itemTitle">Item title</h3> -->
+                <p id="SelectedItem">Item</p>
+            </div>
+        </div>
+    </section>
+    <section  id="searchUsers">
+
+        <div id="listSection">            
+            <label id="labelDropList2" for="allUsers">Select Users</label><br>
+            <select name="allUsers" id="allUsers"><option value="0">Select User Here</option></select>
+        </div>
+        <div class="card cardMenu" id="users">
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="info" id="userInfo">
+                <span class="userInfoCon" id="id">Id</span>
+                <span class="userInfoCon" id="name">Name</span>
+                <span class="userInfoCon" id="phone">Phone</span>
+                <span class="userInfoCon" id="website">Website</span>
+                <span class="userInfoCon" id="email">Email</span>
+                <span class="userInfoCon">Address
+                    <span class="userInfoConInside" id="city">City</span>
+                    <span class="userInfoConInside">geo <span class="userInfoCon" id="lat">
+                        lat
+                    </span><span class="userInfoCon" id="lng">
+                        lng
+                    </span></span>
+                    <span class="userInfoConInside" id="street">street</span>
+                    <span class="userInfoConInside" id="suite">suite</span>
+                    <span class="userInfoConInside" id="zip_code">zip code</span>
+                </span>
+                <span class="userInfoCon">Company
+                    <span class="userInfoConInside" id="company_name">
+                        Name
+                    </span>
+                    <span class="userInfoConInside" id="catch_phrase">
+                        catch phrase
+                    </span>
+                    <span class="userInfoConInside" id="bs">
+                        bs
+                    </span>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section  id="aboutSection">
+        <h2 id="about">About</h2>
+        <div id="aboutSectionDiv">
+        <div class="card">
+            <img src="images/2511753.jpg" alt="" width="300px">
+        </div>
+        <p id="aboutParag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam ratione accusamus deleniti unde, amet eligendi qui molestiae consectetur quam porro nobis, aliquid perspiciatis in reiciendis reprehenderit! Est iusto at harum fugiat, facere numquam atque, ullam facilis impedit cum reiciendis eum vero deleniti sed, rerum itaque tempora mollitia quasi earum.</p>
+        </div>
+    </section>
+    <footer id="footer">
+        <div id="contact">
+            <ul>
+                <li>Phone: +21 0101 10101</li>
+                <li>Email us <a href="mailto:info@store.com">info@store.com</a></li>
+            </ul>
+        </div>
+        <div id="bottom-footer">
+            <div id="social-link">
+                <a class="icon2" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="icon2" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a class="icon2" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        
+            <span id="copyRight">&copy; All Rights are Reserved for Store L.C.C</span>
+        </div>
+    </footer>
+
+    <!-- build:js sources/script.js -->
+    <script src="./scripts/script.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
+
